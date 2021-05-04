@@ -1,3 +1,5 @@
+package FileExplorerJava;
+
 import java.io.File;
 
 //wrapper class for the root File, so you can only call getString and not be able to alter the 

@@ -1,3 +1,5 @@
+package FileExplorerJava;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -70,13 +72,15 @@ public class FileBrowser implements Runnable {
                         // System.out.print("->" + elements[i]);
                         value += elements[i] + "\\";
                     }
-                   // System.out.println(value.substring(4));
+                    System.out.println(value.substring(4));
                     // do something with the above object
-
                     File test = new File(value.substring(4));
+                    value =" C:\\";
+
                     try {
                         if (test.exists())
                             desktop.open(test);
+                            
                     } catch (IOException sex) {
                         sex.printStackTrace();
                     }
